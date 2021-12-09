@@ -1,3 +1,5 @@
+@import '../../../../variables';
+
 .vehicle-stats {
   position: relative;
   background-color: white;
@@ -6,6 +8,13 @@
   height: 150px;
   width: 300px;
   color: #727272;
+  border: 2px solid white;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $color-primary;
+  }
+
   .logo {
     position: absolute;
     top: 15px;
