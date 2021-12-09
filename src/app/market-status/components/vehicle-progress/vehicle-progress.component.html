@@ -1,0 +1,11 @@
+<div class="progress-item">
+  <div class="progress-container">
+    <span>{{ vehicleProgress?.make}}</span><span *ngIf="vehicleProgress?.isTop" class="top">" Top of the last week "</span>
+    <progress [value]="vehicleProgress?.progress" max="100"></progress>
+  </div>
+
+  <img class="picture"
+    [src]="vehicleProgress?.picture"
+    alt="image">
+
+</div>

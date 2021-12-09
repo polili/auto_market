@@ -4,3 +4,10 @@ export interface VehicleStatistics {
   fuelType: string,
   areas: { name: string, number: string }[]
 }
+
+export interface VehicleProgress {
+  make: string, 
+  progress: number,
+  picture: string,
+  isTop: boolean
+}

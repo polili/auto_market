@@ -1,2 +1,2 @@
 export * from './market';
-export * from './vehicle-statistics';
+export * from './vehicle';

@@ -1,0 +1,36 @@
+<div class="chart">
+  <div class="filters">
+    <fieldset>
+      <label for="stats">Stats of the</label>
+      <select id="stats">
+        <option>last week</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label for="country">Select country</label>
+      <select id="country">
+        <option>United States</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label for="province">Select province</label>
+      <select id="province">
+        <option>American</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label for="city">Select city</label>
+      <select id="city">
+        <option>Hispanic</option>
+      </select>
+    </fieldset>
+  </div>
+
+  <app-vehicle-progress 
+    *ngFor="let vehicle of vehicles" 
+    [vehicleProgress]="vehicle">
+  </app-vehicle-progress >
+</div>
