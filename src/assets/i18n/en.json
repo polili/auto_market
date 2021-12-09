@@ -1,4 +1,10 @@
 {
   "page.not.found.title": "Page Not Found",
-  "market.status": "Market status"
+  "market.status": "Market status",
+  "home": "Home",
+  "sell.car": "Sell Car",
+  "buy.car": "Buy Car",
+  "market": "Market",
+  "contact.us": "Contact Us",
+  "post.ad": "Post ad"
 }
