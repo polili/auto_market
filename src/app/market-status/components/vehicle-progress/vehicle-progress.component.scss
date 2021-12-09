@@ -3,14 +3,14 @@ progress {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 20px;
+  height: 15px;
   border-radius: 15px;
   margin-top: 15px;
 }
 
 ::-webkit-progress-value,
 ::-moz-progress-bar {
-  border-radius: 20px;
+  border-radius: 15px;
   background-color: #e8551e;
 }
 
