@@ -1,9 +1,9 @@
-@import 'variables';
+@import "variables";
 
 body {
   background-color: #f4f4f4;
   color: $color-font;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
 
@@ -15,5 +15,22 @@ body {
 .button {
   &--primary {
     background-color: $color-primary;
+  }
+}
+
+.carousel {
+  .carousel-arrows {
+    .carousel-arrow {
+      border-radius: 5px !important;
+      top: 45% !important;
+
+      &.carousel-arrow-prev {
+        left: -20px;
+      }
+
+      &.carousel-arrow-next {
+        right: -20px;
+      }
+    }
   }
 }

@@ -1,0 +1,15 @@
+<div class="vehicle-stats">
+  
+  <img class="logo" src="" alt="logo">
+  <span class="fuel-type">{{ statistics?.fuelType }}</span>
+  <img class="car" [src]="statistics?.picture" alt="car">
+  
+  <div>
+    <ul>
+      <li *ngFor="let a of statistics?.areas">
+        <dt>{{ a.name }}</dt>
+        <dd>{{ a.number }}</dd>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.vehicle-stats {
+  position: relative;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  height: 150px;
+  width: 300px;
+  color: #727272;
+  .logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .car {
+    height: 100px;
+  }
+
+  .fuel-type {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    dt,
+    dd {
+      text-align: center;
+      display: block;
+    }
+
+    dd {
+      color: #000;
+      font-weight: bold;
+      padding: 0;
+      margin: 10px 0;
+    }
+  }
+}

@@ -1,1 +1,9 @@
-<h1>{{ 'market.status' | translate }}</h1>
+<div class="carousel">
+  <carousel [cellWidth]="345">
+    <div class="carousel-cell" *ngFor="let s of vehicles$ | async">
+      <app-vehicle-statistics 
+        [statistics]="s">
+      </app-vehicle-statistics>
+    </div>
+  </carousel>
+</div>
