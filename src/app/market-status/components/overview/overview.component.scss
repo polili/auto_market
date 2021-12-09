@@ -1,0 +1,79 @@
+.jumbotron {
+  padding: 50px;
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+
+  h1 {
+    font-size: 2.5rem;
+    align-self: center;
+  }
+
+  .head {
+    display: flex;
+    margin-left: 75px;
+  }
+
+  .picture {
+    width: 80%;
+  }
+
+  .logo {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .data {
+    display: flex;
+  }
+
+  fieldset,
+  .vehicle-details,
+  .statistics {
+    flex: 1;
+  }
+
+  .vehicle-details {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border-right: 1px solid lightgray;
+    span {
+      padding: 0 30px;
+      align-self: center;
+      font-size: 1.4rem;
+      color: #727272;
+    }
+  }
+
+  .statistics {
+    ul {
+      font-size: 1.4rem;
+      display: flex;
+      list-style: none;
+      padding: 20;
+      margin: 0;
+      height: 100%;
+      li {
+        align-self: center;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        span {
+          margin: 10px 0;
+          color: #727272;
+          &:first-of-type {
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

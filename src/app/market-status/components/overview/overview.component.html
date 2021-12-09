@@ -1,0 +1,29 @@
+<section class="jumbotron">
+  <div class="head">
+    <img class="logo" src="assets/images/bmw_logo.png" alt="">
+    <h1>{{ vehicle?.model }}</h1>
+    <img class="picture" [src]="vehicle?.picture" alt="picture">
+  </div>
+  <div class="data">
+    <fieldset>
+      <label for="market-statut">Market status</label>
+      <select name="marketStatus" id="market-status">
+        <option>Yesterday</option>
+      </select>
+    </fieldset>
+    <div class="vehicle-details">
+      <span><i class="fas fa-route"></i> {{ vehicle?.mileage }}</span>
+      <span><i class="fas fa-temperature-low"></i> {{ vehicle?.temperature }}</span>
+      <span><i class="fas fa-map-marker-alt"></i> {{ vehicle?.place }}</span>
+      <span><i class="fas fa-gas-pump"></i> {{ vehicle?.fuelType }}</span>
+    </div>
+    <div class="statistics">
+      <ul>
+        <li class="area" *ngFor="let a of vehicle?.statistics">
+          <span>{{ a.number }}</span>
+          <span>{{ a.name }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

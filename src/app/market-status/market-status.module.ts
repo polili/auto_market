@@ -9,13 +9,15 @@ import { MarketService } from './services/market.service';
 import { MARKET_SERVICE } from './di';
 import { ChartComponent } from './components/chart/chart.component';
 import { VehicleProgressComponent } from './components/vehicle-progress/vehicle-progress.component';
+import { OverviewComponent } from './components/overview/overview.component';
 
 @NgModule({
   declarations: [
     MarketStatusComponent,
     VehicleStatisticsComponent,
     ChartComponent,
-    VehicleProgressComponent
+    VehicleProgressComponent,
+    OverviewComponent
   ],
   imports: [
     CommonModule,
