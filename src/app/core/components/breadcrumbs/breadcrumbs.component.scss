@@ -1,0 +1,30 @@
+.breadcrumb {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+  font-size: 1.3rem;
+
+  li {
+    display: inline;
+    a {
+      text-decoration: none;
+      color: #0E0E0E;
+    }
+
+    &:not(.active) {
+      a {
+        color: #4B4B4B;
+        &::after {
+          color: #EAEAEA;
+          display: inline-block;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 600;
+          font-size: 0.75em;
+          vertical-align: middle;
+          content: "\f054";
+          margin: 0 20px 0 15px;
+        }
+      }
+    }
+  }
+}
